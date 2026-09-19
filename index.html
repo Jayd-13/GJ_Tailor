@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gujarat Tailor Shop</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="logo">
+      Gujarat Tailor Shop
+    </div>
+
+    <div>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#booking">Booking</a>
+    </div>
+
+  </header>
+
+  <!-- HERO SECTION -->
+
+  <section class="hero" id="home">
+
+    <h1>Perfect Stitching For Every Occasion</h1>
+
+    <p>
+      Premium tailoring services with modern fitting and elegant designs.
+    </p>
+
+    <button>
+      Book Appointment
+    </button>
+
+  </section>
+
+  <!-- SERVICES -->
+
+  <section class="services" id="services">
+
+    <h2>Our Services</h2>
+
+    <div class="service-container">
+
+      <div class="card">
+        <h3>Suit Stitching</h3>
+
+        <p>
+          Professional suit stitching for weddings,
+          parties, and formal events.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Blouse Design</h3>
+
+        <p>
+          Stylish blouse stitching with modern
+          and custom designs.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Pant Alteration</h3>
+
+        <p>
+          Fast and accurate pant fitting
+          and alteration services.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PRICING -->
+
+  <section class="pricing" id="pricing">
+
+    <h2>Pricing</h2>
+
+    <table>
+
+      <tr>
+        <th>Service</th>
+        <th>Price</th>
+      </tr>
+
+      <tr>
+        <td>Suit Stitching</td>
+        <td>₹2500</td>
+      </tr>
+
+      <tr>
+        <td>Blouse Design</td>
+        <td>₹800</td>
+      </tr>
+
+      <tr>
+        <td>Pant Alteration</td>
+        <td>₹300</td>
+      </tr>
+
+    </table>
+
+  </section>
+
+  <!-- BOOKING -->
+
+  <section class="booking" id="booking">
+
+    <h2>Book Appointment</h2>
+
+    <form id="bookingForm">
+
+      <input type="text" placeholder="Your Name" required>
+
+      <input type="tel" placeholder="Mobile Number" required>
+
+      <input type="date" required>
+
+      <button type="submit">
+        Book Now
+      </button>
+
+    </form>
+
+    <p id="message"></p>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+      © 2026 Gujarat Tailor Shop | Designed by Jay Darji
+    </p>
+
+  </footer>
+
+  <script src="script.js"></script>
+  
+  <!--const form = document.getElementById("bookingForm");
+
+const message = document.getElementById("message");
+
+form.addEventListener("submit", function(e){
+
+  e.preventDefault();
+
+  message.innerText =
+  "Your Appointment Has Been Booked Successfully!";
+
+  form.reset();
+
+});-->
+
+
+
+</body>
+</html>

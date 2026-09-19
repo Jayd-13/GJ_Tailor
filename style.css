@@ -1,0 +1,295 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f8f8f8;
+    color:#333;
+    line-height:1.6;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#222;
+    color:white;
+    padding:20px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#FFD700;
+}
+
+header a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:18px;
+    transition:.3s;
+}
+
+header a:hover{
+    color:#FFD700;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    color:white;
+
+    background:
+    linear-gradient(rgba(0,0,0,.6),
+    rgba(0,0,0,.6)),
+    url("IMG_2440.jpeg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    max-width:700px;
+    margin-bottom:30px;
+}
+
+.hero button{
+    background:#FFD700;
+    color:black;
+    border:none;
+    padding:15px 35px;
+    font-size:18px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.hero button:hover{
+    background:#ffb300;
+    transform:scale(1.05);
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.services h2{
+    font-size:38px;
+    margin-bottom:50px;
+}
+
+.service-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:320px;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#c48a00;
+    margin-bottom:15px;
+    font-size:25px;
+}
+
+.card p{
+    font-size:17px;
+}
+
+/* =========================
+   PRICING
+========================= */
+
+.pricing{
+    padding:80px 8%;
+    background:white;
+    text-align:center;
+}
+
+.pricing h2{
+    margin-bottom:30px;
+    font-size:38px;
+}
+
+table{
+    width:70%;
+    margin:auto;
+    border-collapse:collapse;
+    box-shadow:0 5px 10px rgba(0,0,0,.2);
+}
+
+th{
+    background:#222;
+    color:white;
+    padding:15px;
+}
+
+td{
+    padding:15px;
+    border:1px solid #ddd;
+}
+
+tr:nth-child(even){
+    background:#f2f2f2;
+}
+
+tr:hover{
+    background:#ffe599;
+}
+
+/* =========================
+   BOOKING
+========================= */
+
+.booking{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.booking h2{
+    margin-bottom:30px;
+    font-size:38px;
+}
+
+form{
+    width:400px;
+    margin:auto;
+}
+
+form input{
+    width:100%;
+    padding:15px;
+    margin:12px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+}
+
+form input:focus{
+    border-color:#FFD700;
+    outline:none;
+}
+
+form button{
+    width:100%;
+    padding:15px;
+    background:#222;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+form button:hover{
+    background:#FFD700;
+    color:black;
+}
+
+#message{
+    margin-top:20px;
+    color:green;
+    font-weight:bold;
+    font-size:20px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    text-align:center;
+}
+
+header div{
+    margin-top:15px;
+}
+
+header a{
+    display:block;
+    margin:10px 0;
+}
+
+.hero h1{
+    font-size:35px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+table{
+    width:100%;
+}
+
+form{
+    width:100%;
+}
+
+.card{
+    width:100%;
+}
+
+}
